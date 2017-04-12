@@ -2,6 +2,10 @@ var inFullscreen = true;
 var mainCanvas = null;
 var fullscreenCanvas = null;
 var showAsMinimal = false;
+			gameboy.canvas = fullscreenCanvas;
+			fullscreenCanvas.className = (showAsMinimal) ? "minimum" : "maximum";
+			document.getElementById("fullscreenContainer").style.display = "block";
+			windowStacks[0].hide();
 var keyZones = [
 	["right", [39]],
 	["left", [37]],
