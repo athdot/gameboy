@@ -58,8 +58,8 @@ div.window {
 	opacity: 1;
 }
 div#GameBoy {
-	min-height: 100vh;
-	min-width: 100hw;
+height: 100vh;
+	width: 100%;
 }
 div#input_select, div#save_importer {
 	min-height: 100px;
