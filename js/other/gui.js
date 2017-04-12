@@ -1,4 +1,4 @@
-var inFullscreen = false;
+var inFullscreen = true;
 var mainCanvas = null;
 var fullscreenCanvas = null;
 var showAsMinimal = false;
@@ -311,7 +311,7 @@ function registerGUIEvents() {
     addEvent("click", document.getElementById("channel4"), function () {
         settings[14][3] = document.getElementById("channel4").checked;
     });
-	addEvent("onload", document.getElementById("view_fullscreen"), fullscreenPlayer);
+	addEvent("click", document.getElementById("view_fullscreen"), fullscreenPlayer);
 	new popupMenu(document.getElementById("GameBoy_view_menu"), document.getElementById("GameBoy_view_popup"));
 	addEvent("click", document.getElementById("view_terminal"), function () { windowStacks[1].show() });
 	addEvent("click", document.getElementById("view_instructions"), function () { windowStacks[5].show() });
