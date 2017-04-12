@@ -112,7 +112,7 @@ function registerGUIEvents() {
 			}
 		}
 	});
-	addEvent("click", document.getElementById("internal_file_clicker"), function () {
+	addEvent("onload", document.getElementById("internal_file_clicker"), function () {
 		var file_opener = document.getElementById("local_file_open");
 		windowStacks[4].show();
 		file_opener.click();
